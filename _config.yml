@@ -26,9 +26,10 @@ url: "http://skylargivens.com" # the base hostname & protocol for your site, e.g
 github_username:  skylargivens
 
 # Build settings
-theme: minimal-mistakes-jekyll
+remote_theme: "mmistakes/minimal-mistakes@4.26.2"
 plugins:
   - jekyll-feed
+  - jekyll-include-cache
 
 defaults:
   # _posts
