@@ -31,6 +31,19 @@ plugins:
   - jekyll-feed
   - jekyll-include-cache
 
+author:
+  name: Skylar Givens
+  location: San Francisco, CA
+  avatar: /assets/images/avatar.jpg
+  bio: Full-Stack Software Engineer specializing in search, machine learning, data engineering, and Next.js/React.
+  links:
+    - label: "GitHub"
+      icon: "fab fa-github"
+      url: "https://github.com/skylargivens"
+    - label: "LinkedIn"
+      icon: "fab fa-linkedin"
+      url: "https://www.linkedin.com/in/skylargivens/"
+
 defaults:
   # _posts
   - scope:
@@ -40,7 +53,8 @@ defaults:
       layout: single
       author_profile: true
       share: true
-      related: true
+      related: false
+      author: Skylar Givens
 
 # Exclude from processing.
 # The following items will not be processed, by default.
