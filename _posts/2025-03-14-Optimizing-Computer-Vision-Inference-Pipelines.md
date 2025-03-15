@@ -20,6 +20,10 @@ graph LR
     Python -->|"512-dim<br/>Embeddings"| Postgres[(Postgres/<br>pgvector)]
 ```
 
-## Speeding Up Data Loading
+## The Base Case
 
-Data to be inferred on rarely lives alongside the GPU. Most commonly, relatively high-latency cloud storage is involved, and we must pay the overhead of transferring data from the storage layer to the GPU.
+Data to be inferred on rarely lives alongside the GPU. In this case, relatively high-latency cloud storage is involved, and we must pay the overhead of transferring data from the storage layer to the GPU. First we will benchmark the naive base case, downloading each image individually, resizing it, embedding it, and storing the resulting embedding in Postgres.
+
+## Speeding Up Data Loading with Batch Downloads
+
+TODO
